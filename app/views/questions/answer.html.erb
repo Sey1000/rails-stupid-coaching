@@ -1,7 +1,17 @@
-<p>You: 
-  <%= params[:query] %>
-</p>
-
-<p>Your coach: Shut up</p>
-
-<%= link_to 'Ask a new question', ask_path %>
+<div class="message-center">
+  <div class="message-container">
+    <div class="message">
+      <h5>
+        <%= @message %>
+      </h5>
+      <p>You</p>
+    </div>
+    <div class="message">
+      <h5>
+        <%= @coach_answer %>
+      </h5>
+      <p>Your Coach</p>
+    </div>
+    <%= link_to 'Ask a new question', ask_path %>
+  </div>
+</div>
